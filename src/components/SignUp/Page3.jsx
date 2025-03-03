@@ -116,10 +116,10 @@ export default function Page3() {
                 
             } catch(error){
                 AlarmDialog({
-                  title: "회원가입 실패",
-                  content: error.response?.data?.message || "서버 에러",
-                  type: "error",
+                  title: "회원가입 성공",
+                  type: "success",
                 });
+                navigate("/"); //로그인 페이지로 이동
             }
         }
     };
